@@ -1,0 +1,29 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Teste com typescript",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexdonay/testetypescript.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Alexsander Batista Donay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexdonay/testetypescript/issues"
+  },
+  "homepage": "https://github.com/alexdonay/testetypescript#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "devDependencies": {
+    "parcel": "^2.4.0"
+  }
+}
