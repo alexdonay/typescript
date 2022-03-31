@@ -29,7 +29,7 @@ const usuario: Iusuario = {
   
 }
 document.getElementById("usuario").innerText = usuario.nome
-
+//Classe
 class usuario2 implements Iusuario {
   nome: string;
   idade: number;
@@ -47,3 +47,17 @@ class usuario2 implements Iusuario {
 const alexsander = new usuario2("Alexsander", 23, "FREE")
 document.getElementById("usuario2").innerText = alexsander.nome
 alexsander.caminhar(10)
+
+//teste type
+const i = document.getElementById("input") as HTMLInputElement;
+
+i.addEventListener('input',(Event =>{
+  console.log(i.value)
+}))
+
+//Generic types
+
+function appendonlist<generic>(array:any[],value:generic){
+  return array.map(item => item + value)
+}
+appendonlist([1,2,3] ,4)
