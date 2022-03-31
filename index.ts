@@ -23,7 +23,7 @@ const usuario: Iusuario = {
   idade: 23,
   tipoAcesso: "FREE",
   caminhar: (km:number) =>{
-    console.log(`${this.nome} caminhou ${km}km`)
+  console.log(`${this.nome} caminhou ${km}km`)
   }
     
   
