@@ -46,6 +46,7 @@ class user implements simpleuser {
         this.office = office
     }
     login(username: string, password: string): boolean{
+        
         return (username === this.logininfo.username && password === this.logininfo.password)
         }
         
@@ -54,10 +55,7 @@ class user implements simpleuser {
 
 const donay : simpleuser = new user(1,"Alexsander","Rua dois","alexdonay@gmail.com",{username:"alexdonay",password:"123"},"f1")
 
-donay.login("alexdonay","1234")?
-    document.getElementById("login").innerHTML = "Logado com sucesso!"
-    :
-    document.getElementById("login").innerHTML = "Não foi possível logar"
+donay.login("alexdonay","123")?    document.getElementById("login").innerHTML = "Logado com sucesso!" : document.getElementById("login").innerHTML = "Não foi possível logar"
 
 
 
