@@ -7,15 +7,15 @@ document.getElementById("root").innerText = soma(1, 2).toString();
 
 //teste interface
 interface Ipessoa {
-  nome: string;
-  idade: number;
-  caminhar(km:number): void;
+  nome: string
+  idade: number
+  caminhar(km:number): void
   
   
   
 }
 interface Iusuario extends Ipessoa {
-  tipoAcesso: "FREE" | "STANDARD" | "PREMIUM";
+  tipoAcesso: "FREE" | "STANDARD" | "PREMIUM"
 }
 
 const usuario: Iusuario = {
@@ -23,7 +23,7 @@ const usuario: Iusuario = {
   idade: 23,
   tipoAcesso: "FREE",
   caminhar: (km:number) =>{
-    console.log(`${this.nome} caminhou ${km}km`); 
+    console.log(`${this.nome} caminhou ${km}km`)
   }
     
   
@@ -35,9 +35,9 @@ class usuario2 implements Iusuario {
   idade: number;
   tipoAcesso: "FREE" | "STANDARD" | "PREMIUM";
   constructor(nome: string, idade: number, tipoAcesso: "FREE" | "STANDARD" | "PREMIUM") {
-    this.nome = nome;
-    this.idade = idade;
-    this.tipoAcesso = tipoAcesso;
+    this.nome = nome
+    this.idade = idade
+    this.tipoAcesso = tipoAcesso
   }
   caminhar(km:number){
     console.log(`${this.nome} caminhou ${km}km`); 
@@ -49,7 +49,7 @@ document.getElementById("usuario2").innerText = alexsander.nome
 alexsander.caminhar(10)
 
 //teste type
-const i = document.getElementById("input") as HTMLInputElement;
+const i = document.getElementById("input") as HTMLInputElement
 
 i.addEventListener('input',(Event =>{
   console.log(i.value)
